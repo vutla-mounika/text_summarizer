@@ -1,3 +1,7 @@
-Flask>=2.0
-sumy>=0.8.1
-nltk>=3.8
+Flask
+sumy
+nltk
+numpy
+fpdf
+reportlab
+gunicorn
