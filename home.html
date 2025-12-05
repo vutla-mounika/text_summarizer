@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>Paste text to summarize</h2>
+
+    {% if error %}
+        <div class="error">{{ error }}</div>
+    {% endif %}
+
+    <form action="/summarize" method="post">
+    <label for="text">Your long text</label>
+    <textarea id="text" name="text" placeholder="Paste article, essay, or notes here..." required>{{ request.form.text or '' }}</textarea>
+
+    <label for="sentences">Summary length (number of sentences)</label>
+    <input id="sentences" name="sentences" type="number" min="1" value="3">
+
+    <label for="summary_type">Choose summary format</label>
+    <select id="summary_type" name="summary_type">
+        <option value="paragraph">Paragraph</option>
+        <option value="points">Bullet Points</option>
+        <option value="sentences">Individual Sentences</option>
+    </select>
+
+    <div class="actions">
+        <button type="submit">Summarize</button>
+        <button type="reset" class="secondary">Clear</button>
+    </div>
+</form>
+
+
+    <hr>
+    <p class="hint">Tip: For best results paste paragraphs with clear sentences. This app performs <strong>extractive summarization</strong>, meaning it picks the most important sentences from the input.</p>
+</div>
+{% endblock %}

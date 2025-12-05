@@ -1,0 +1,117 @@
+/* 💙 LIGHT BLUE SOFT BACKGROUND */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #E9F4FF, #D4E9FF);
+    color: #1F355D;
+}
+
+/* HEADER – BLUE WITH SOFT BLUR */
+header {
+    background: rgba(0, 122, 255, 0.65); /* Transparent blue */
+    color: white;
+    padding: 16px 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    backdrop-filter: blur(12px); /* ☆ BLUR */
+}
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* MAIN CONTAINER */
+.container {
+    max-width: 900px;
+    margin: 36px auto;
+    padding: 0 16px;
+}
+
+/* 🧊 GLASS CARD – BLUE TINT (Strong Blur) */
+.card {
+    background: rgba(255, 255, 255, 0.45); /* Transparent frosted */
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 12px 30px rgba(0, 70, 130, 0.25);
+    backdrop-filter: blur(20px); /* ☆ STRONG BLUR */
+    color: #1F355D;
+    border: 1px solid rgba(255,255,255,0.6);
+}
+
+/* LABELS */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+    color: #1F355D;
+}
+
+/* 🧊 TEXTAREA – Blue Frost Glass */
+textarea {
+    width: 100%;
+    min-height: 220px;
+    resize: vertical;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(50, 130, 255, 0.25);
+    background: rgba(210, 230, 255, 0.45);
+    color: #1F355D;
+    font-size: 15px;
+    backdrop-filter: blur(12px); /* ☆ BLUR */
+}
+
+/* INPUTS + SELECT */
+input[type="number"], select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(50, 130, 255, 0.25);
+    background: rgba(210, 230, 255, 0.45);
+    color: #1F355D;
+    width: 160px;
+    font-weight: 600;
+    backdrop-filter: blur(12px);
+}
+
+/* BUTTONS */
+button, .btn {
+    background: #007AFF; /* iOS Blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.25s;
+    box-shadow: 0px 6px 14px rgba(0, 70, 130, 0.25);
+}
+button:hover, .btn:hover {
+    background: #005FCC;
+}
+
+/* SECONDARY BUTTON */
+button.secondary {
+    background: transparent;
+    color: #1F355D;
+    border: 1px solid rgba(0,0,0,0.25);
+}
+button.secondary:hover {
+    background: rgba(200,220,255,0.3);
+}
+
+/* SUMMARY BOX – Light Transparent Glass */
+.summary-box {
+    background: rgba(255,255,255,0.40);
+    padding: 14px;
+    border-radius: 12px;
+    border-left: 4px solid #007AFF;
+    color: #1F355D;
+    backdrop-filter: blur(14px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 16px 0;
+    color: #1F355D;
+    opacity: 0.85;
+}

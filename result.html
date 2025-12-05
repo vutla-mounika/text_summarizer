@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+    <h2>Summary Output</h2>
+
+    <h3>Format: {{ summary_type|capitalize }}</h3>
+
+    <div class="summary-box">
+        {{ summary|safe }}
+    </div>
+
+    <div class="actions">
+        <a class="btn" href="/">Summarize Another</a>
+        <a class="btn" href="/download_summary">Download Summary</a>
+    </div>
+
+</div>
+{% endblock %}
